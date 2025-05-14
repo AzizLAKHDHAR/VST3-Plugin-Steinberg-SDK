@@ -1,0 +1,34 @@
+# Ignore VST3 SDK (should not be committed)
+VST3_SDK/
+
+# Ignore build artifacts and generated files
+build/
+*.vst3
+*.dll
+*.so
+*.dylib
+*.exp
+*.lib
+*.pdb
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.cmake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# User-specific or IDE files
+*.user
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+*.log
+*.yaml
+*.cache

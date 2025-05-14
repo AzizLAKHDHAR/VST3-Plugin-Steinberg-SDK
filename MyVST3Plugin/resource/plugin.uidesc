@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vstgui-ui-description version="1">
+  <fonts>
+  </fonts>
+  <colors>
+    <color name="Background" rgba="#c8c8c8ff"/>
+    <color name="Knob" rgba="#2c77ad"/>
+    <color name="Label" rgba="#000000ff"/>
+  </colors>
+  <template background-color="Background" background-color-draw-style="filled and stroked" class="CViewContainer" mouse-enabled="true" name="view" origin="0, 0" size="400, 200">
+    <!-- Mix Knob -->
+    <view back-color="~ TransparentCColor" background-offset="0, 0" class="CKnob" control-tag="1002" default-value="0.3" max-value="1" min-value="0" origin="50, 50" size="80, 80" tooltip="Mix" transparent="false" value-inset="3" zoom-factor="1.5">
+      <bitmap-font/>
+    </view>
+    <view back-color="~ TransparentCColor" background-offset="0, 0" class="CTextLabel" default-value="0.3" font="~ NormalFont" font-antialias="true" font-color="Label" frame-color="~ TransparentCColor" frame-width="1" max-value="1" min-value="0" origin="50, 140" size="80, 20" text="Mix" text-alignment="center" title="Mix" transparent="false" value-precision="2" wheel-inc-value="0.1"/>
+    <!-- Room Size Knob -->
+    <view back-color="~ TransparentCColor" background-offset="0, 0" class="CKnob" control-tag="1003" default-value="0.5" max-value="1" min-value="0" origin="250, 50" size="80, 80" tooltip="Room Size" transparent="false" value-inset="3" zoom-factor="1.5">
+      <bitmap-font/>
+    </view>
+    <view back-color="~ TransparentCColor" background-offset="0, 0" class="CTextLabel" default-value="0.5" font="~ NormalFont" font-antialias="true" font-color="Label" frame-color="~ TransparentCColor" frame-width="1" max-value="1" min-value="0" origin="250, 140" size="80, 20" text="Room Size" text-alignment="center" title="Room Size" transparent="false" value-precision="2" wheel-inc-value="0.1"/>
+  </template>
+  <custom>
+    <attributes name="FocusDrawing"/>
+    <attributes Path=""/>
+    <attributes name="UIGridController">
+      <attributes grid-size="10"/>
+    </attributes>
+  </custom>
+</vstgui-ui-description>
